@@ -2,8 +2,10 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 27
+    buildToolsVersion '26.0.3'
+
     defaultConfig {
-        applicationId "ir.vhdrjbs.dgradient"
+        applicationId "com.vhdrjb.dynamicgradient"
         minSdkVersion 14
         targetSdkVersion 27
         versionCode 1
