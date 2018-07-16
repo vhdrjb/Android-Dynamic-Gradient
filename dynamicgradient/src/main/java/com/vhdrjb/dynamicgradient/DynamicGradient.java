@@ -9,14 +9,9 @@ public class DynamicGradient {
         return new GradientDrawable(orientation, getGradientColors(color, endColorDiffer));
     }
 
-    public int[] getGradientNegativeColors(int color, int endColorDiffer) {
-        String hexColor = Integer.toHexString(color);
-        return this.getGradientColors(hexColor, endColorDiffer);
-    }
-
-    public int[] getGradientNegativeColors(String color, int endColorDiffer) {
-        String hexColor = Integer.toHexString(Integer.parseInt(color));
-        return this.getGradientColors(hexColor, endColorDiffer);
+    public Drawable generateDynamicNegativeGradinet(int color, int endColorDiffer, GradientDrawable.Orientation orientation) {
+        String negativeColor = Integer.toHexString(color);
+        return new GradientDrawable(orientation, getGradientColors(negativeColor, endColorDiffer));
     }
 
     private int[] getGradientColors(String colorSource, int endColorDiffer) {
