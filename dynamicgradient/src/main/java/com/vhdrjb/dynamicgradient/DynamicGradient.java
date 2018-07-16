@@ -14,7 +14,6 @@ public class DynamicGradient {
         return this.getGradientColors(hexColor, endColorDiffer);
     }
 
-
     public int[] getGradientNegativeColors(String color, int endColorDiffer) {
         String hexColor = Integer.toHexString(Integer.parseInt(color));
         return this.getGradientColors(hexColor, endColorDiffer);
