@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
         CardView cardView = findViewById(R.id.cardView);
         DynamicGradient dynamicGradient = new DynamicGradient();
         Drawable drawable = dynamicGradient.generateDynamicGradient("#CFBDF7", 30, GradientDrawable.Orientation.BL_TR);
+        Drawable drawable1 = dynamicGradient.generateDynamicColorGradient("EEE", 30, GradientDrawable.Orientation.BL_TR);
         cardView.setBackgroundDrawable(drawable);
     }
 
