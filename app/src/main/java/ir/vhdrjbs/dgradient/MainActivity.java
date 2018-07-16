@@ -7,7 +7,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.CardView;
 
-import ir.vhdrjbs.dynamicgradient.DynamicGradient;
+import com.vhdrjb.dynamicgradient.DynamicGradient;
+
 
 public class MainActivity extends AppCompatActivity {
     private final static String[] colors = {"#CFBDF7"};

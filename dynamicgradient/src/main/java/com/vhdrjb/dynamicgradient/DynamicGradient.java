@@ -6,8 +6,17 @@ import android.graphics.drawable.GradientDrawable;
 
 public class DynamicGradient {
     public Drawable generateDynamicGradient(String color, int endColorDiffer, GradientDrawable.Orientation orientation) {
-
         return new GradientDrawable(orientation, getGradientColors(color, endColorDiffer));
+    }
+
+    private int[] getGradientNegativeColors(int color, int endColorDiffer) {
+        String hexColor = Integer.toHexString(color);
+        return this.getGradientColors(hexColor, endColorDiffer);
+    }
+
+    private int[] getGradientNegativeColors(String color, int endColorDiffer) {
+        String hexColor = Integer.toHexString(Integer.parseInt(color));
+        return this.getGradientColors(hexColor, endColorDiffer);
     }
 
     private int[] getGradientColors(String colorSource, int endColorDiffer) {
